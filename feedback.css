@@ -1,0 +1,359 @@
+.section {
+    background-color: #3aaf31d4;
+    padding: 10px;
+    box-shadow: inset 0px 1px 6px 0px black;
+}
+
+.feedbox{
+    
+    background-color:antiquewhite;
+    padding: 10px;
+    box-shadow: inset 0px 1px 6px 0px black;
+}
+
+.container2 {
+    min-height: 70px;
+    width: 70%;
+    margin: auto;
+}
+.container3 {
+    min-height: 70px;
+    width: 70%;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    margin: auto;
+    flex: 1;
+}
+
+
+body {
+    font: 15px/1.5 Arial;
+}
+
+.topbar {
+    min-height: 40px;
+    width: 100%;
+    margin: auto;
+    background: white;
+    border: 0;
+    box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    padding-bottom: 20px;
+
+
+}
+
+.container {
+    min-height: 70px;
+    width: 70%;
+    margin: auto;
+}
+
+.branding {
+
+    float: left;
+    margin: auto;
+    position: relative;
+    padding-top: 15px;
+
+}
+
+.branding a {
+
+    text-decoration: none;
+}
+
+.branding a h1 {
+    color: red;
+    font-size: 30px;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 700;
+    margin-left: 25px;
+
+
+}
+
+.menu {
+    left: 0%;
+    margin-top: 23px;
+    float: right;
+
+}
+
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu li {
+    float: none;
+    display: inline;
+    list-style-type: none;
+    padding: 0 40px 0 40px;
+    font-weight: 600;
+}
+
+.menu ul li a {
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: red;
+}
+
+.menu ul li ul li {
+    display: none;
+    position: absolute;
+}
+
+.menu ul li:hover ul li {
+    display: block;
+}
+
+.branding h1:hover {
+    color: dodgerblue;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.ctext p {
+    color: white;
+    font-size: 18px;
+
+}
+
+.fbar {
+    width: 100%;
+    min-height: 190px;
+    background: #002847;
+    display: flex;
+    justify-content: space-around;
+
+
+
+}
+
+.footainer {
+    width: 75%;
+    margin: auto;
+}
+
+.social {
+    width: 100%;
+    min-height: 60px;
+    background: #FFF294;
+
+}
+
+.about {
+    text-align: center;
+    margin: auto;
+    flex: 1;
+}
+
+.others {
+    text-align: center;
+    margin: auto;
+    flex: 1;
+}
+
+.fbar ul li {
+    color: aliceblue;
+    list-style-type: none;
+}
+
+.fbar ul li a {
+
+    text-decoration: none;
+}
+
+.help {
+    text-align: center;
+    margin: auto;
+    flex: 1;
+
+}
+
+.scbtn {
+    background: #E1E1E1;
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    background: #FF5E4E;
+    margin: 10px;
+    border-radius: 1%;
+    box-shadow: 0 2px 5px -2px #00000070;
+    color: #FFFFFF;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn i {
+    line-height: 40px;
+    font-size: 26px;
+    transition: 0.2s linear;
+}
+
+.btn:hover i {
+    transform: scale(1.3);
+    color: #FF0D0D;
+    color: #FF0D0D;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #FFFFFF;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.btn:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa {
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+
+    100% {
+        top: -10%;
+        left: -10%;
+    }
+}
+
+.copyr {
+    text-align: center;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+@media screen and (max-width : 900px) {
+
+    .branding {
+
+        float: none;
+        margin: auto;
+        text-align: center;
+        position: relative;
+
+    }
+
+    .menu {
+        float: none;
+        margin-top: 23px;
+
+
+    }
+
+    .menu li {
+        float: none;
+        display: inline;
+        list-style-type: none;
+        text-align: center;
+        padding: 0 40px 0 40px;
+        font-weight: 600;
+        position: relative;
+    }
+
+    .container {
+        min-height: 70px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+.branding a h1 {
+
+    margin-left: 0px;
+
+
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #FFB900;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #00BDFF;
+}
